@@ -29,7 +29,8 @@ import com.liferay.portal.configuration.metatype.annotations.ExtendedObjectClass
 public interface WorkflowInstanceWebConfiguration {
 
 	@Meta.AD(
-		deflt = "list", optionLabels = {"Descriptive", "List"},
+		deflt = "list", name = "default-display-view",
+		optionLabels = {"Descriptive", "List"},
 		optionValues = {"descriptive", "list"}, required = false
 	)
 	public String defaultDisplayView();
